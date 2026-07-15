@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { translations } from './data/translations';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
+import Introduction from './components/Introduction';
 import Competencies from './components/Competencies';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
@@ -18,6 +19,7 @@ export default function App() {
       <Navbar lang={lang} setLang={setLang} t={t} />
       <main>
         <Header t={t} />
+        <Introduction t={t} />
         <Competencies t={t} />
         <Experience t={t} />
         <Projects t={t} setZoomedImg={setZoomedImg} />
